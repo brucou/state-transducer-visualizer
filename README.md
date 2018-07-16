@@ -1,5 +1,7 @@
 # State transducer visualization tool
 
+## Examples
+![cd-player-dagre](./assets/cd-player-dagre-visually-adjusted.png)
 
 ## Quick start
 
