@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>test of visualizing compound graph with cytoscape</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Add your site or application content here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.1.4/cytoscape.min.js"></script>
+  <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-cose-bilkent/1.6.5/cytoscape-cose-bilkent.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.2.1/cytoscape-dagre.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/cytoscape-klay@3.1.1/cytoscape-klay.min.js"></script>-->
+  <script src="js/rosetree.umd.js"></script>
+  <script src="js/index.js"></script>
+
+  <div id="app">
+    <div class="container">
+    <div class="editor">
+      <textarea id="graph" title="graph spec" ></textarea>
+      <button id="visualize">Generate graph</button>
+    </div>
+      <div id="cy"></div>
+  </div>
+  </div>
+</body>
+
+</html>

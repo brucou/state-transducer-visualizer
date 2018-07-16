@@ -1,0 +1,63 @@
+@startuml
+skinparam backgroundColor White
+skinparam state {
+  FontColor White
+  ArrowColor Black
+  StartColor Gray
+  EndColor Red
+  BackgroundColor<<NoContent>> Olive
+  BorderColor Gray
+  FontName Impact
+}
+
+[*] --> No_CD_Loaded
+
+state "No CD Loaded" as No_CD_Loaded <<NoContent>> {
+  state "CD Drawer Closed" as CD_Drawer_Closed <<NoContent>>
+  state "CD Drawer Open" as CD_Drawer_Open <<NoContent>>
+  state "Closing CD Drawer" as Closing_CD_Drawer <<NoContent>>
+  [*] --> CD_Drawer_Closed
+  CD_Drawer_Closed--> CD_Drawer_Open: Eject
+  CD_Drawer_Open --> Closing_CD_Drawer: Eject
+  Closing_CD_Drawer --> CD_Drawer_Closed: [No CD In Drawer]
+}
+
+state "CD Loaded" as CD_Loaded <<NoContent>> {
+  state "CD Loaded Group" as CD_Loaded_Group <<NoContent>> {
+    state "CD Playing" as CD_Playing <<NoContent>>
+    state "CD Stopped" as CD_Stopped <<NoContent>>
+    state "CD Paused" as CD_Paused <<NoContent>> {
+      state "Time And Track (fields not blank)" as Time_And_Track_Fields_Not_Blank <<NoContent>>
+      state "Time And Track (fields blank)" as Time_And_Track_Fields_Blank <<NoContent>>
+      [*] --> Time_And_Track_Fields_Not_Blank
+      Time_And_Track_Fields_Not_Blank --> Time_And_Track_Fields_Blank: Timer Expired
+      Time_And_Track_Fields_Blank --> Time_And_Track_Fields_Not_Blank: Timer Expired
+    }
+    state "H" as H1 <<NoContent>>
+    state "H" as H2 <<NoContent>>
+    state "H" as H3 <<NoContent>>
+    [*] --> CD_Stopped
+    CD_Playing --> CD_Paused : Pause
+    CD_Paused --> CD_Playing : Pause Or Play
+    CD_Playing --> CD_Playing : [Timer expired and not end of CD]
+    CD_Playing --> CD_Stopped : [Timer expired and end of CD]
+    CD_Playing --> CD_Stopped : Stop
+    CD_Stopped --> CD_Playing : Play
+    CD_Paused --> CD_Stopped : Stop
+  }
+  state "CD stepping forwards" as CD_stepping_forwards <<NoContent>>
+  state "CD stepping backwards" as CD_stepping_backwards <<NoContent>>
+  CD_Loaded_Group --> H3: [previous track and track >= 1]
+  CD_Loaded_Group --> H3: [next track and track <> last]
+  CD_stepping_forwards --> H1: Forward up
+  CD_stepping_forwards --> CD_Stopped : [Timer expired and end of CD]
+  CD_Loaded_Group --> CD_stepping_forwards : Forward down
+  CD_stepping_forwards --> CD_stepping_forwards : [Timer expired and not end of CD]
+  CD_stepping_backwards --> H2: Reverse up
+  CD_Loaded_Group --> CD_stepping_backwards : Reverse down
+  CD_stepping_backwards --> CD_stepping_backwards : [Timer expired]
+}
+
+Closing_CD_Drawer --> CD_Loaded: [CD in drawer]
+CD_Loaded --> CD_Drawer_Open: Eject
+@enduml

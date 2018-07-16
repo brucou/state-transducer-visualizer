@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="623.7562px"
+     preserveAspectRatio="none" style="width:837px;height:623px;" version="1.1"
+     viewBox="0 0 837 623" width="837.3134px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f18rcl2tja00kn" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="0.845771144278607"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="1.691542288557214" dy="1.691542288557214" in="blurOut2"
+                      result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--cluster No_CD_Loaded-->
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="212.7114" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="160.2736"
+              x="12.6866" y="35.2179"/>
+        <rect fill="#FFFFFF" height="199.0536" rx="5.2861" ry="5.2861"
+              style="stroke: #FFFFFF; stroke-width: 0.4228855721393035;" width="157.7363"
+              x="13.9552" y="47.6071"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="12.6866" x2="172.9602"
+              y1="46.3385" y2="46.3385"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="41.8657" x="71.8905" y="42.4049">No CD Loaded
+        </text><!--cluster CD_Loaded-->
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="343.6876" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="726.5174"
+              x="105.7214" y="275.4169"/>
+        <rect fill="#FFFFFF" height="330.0297" rx="5.2861" ry="5.2861"
+              style="stroke: #FFFFFF; stroke-width: 0.4228855721393035;" width="723.9801" x="106.99"
+              y="287.8061"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="105.7214" x2="832.2388"
+              y1="286.5375" y2="286.5375"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="32.1393" x="449.1045" y="282.6039">CD Loaded
+        </text><!--cluster CD_Loaded_Group-->
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="295.0557" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="363.2587"
+              x="126.0199" y="307.1333"/>
+        <rect fill="#FFFFFF" height="281.3978" rx="5.2861" ry="5.2861"
+              style="stroke: #FFFFFF; stroke-width: 0.4228855721393035;" width="360.7214"
+              x="127.2886" y="319.5226"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="126.0199" x2="489.2786"
+              y1="318.2539" y2="318.2539"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="52.0149" x="281.6418" y="314.3203">CD Loaded Group
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="61.7413" x="26.6418"
+              y="109.2229"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="26.6418" x2="88.3831"
+              y1="120.3435" y2="120.3435"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="53.2836" x="30.8706" y="116.8328">CD Drawer Closed
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="57.5124"
+              x="105.2985" y="162.9294"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="105.2985" x2="162.8109"
+              y1="174.0499" y2="174.0499"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="49.0547" x="109.5274" y="170.5392">CD Drawer Open
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="63.01" x="41.2313"
+              y="216.6358"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="41.2313" x2="104.2413"
+              y1="227.7564" y2="227.7564"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="54.5522" x="45.4602" y="224.2457">Closing CD Drawer
+        </text>
+        <ellipse cx="57.5124" cy="79.198" fill="#808080" filter="url(#f18rcl2tja00kn)" rx="4.2289"
+                 ry="4.2289" style="stroke: none; stroke-width: 0.4228855721393035;"/>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="71.4677"
+              x="499.6393" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="499.6393" x2="571.107"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="63.01" x="503.8682" y="380.595">CD stepping forwards
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="77.8109"
+              x="690.5721" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="690.5721" x2="768.3831"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="69.3532" x="694.801" y="380.595">CD stepping backwards
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="39.3284"
+              x="335.1368" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="335.1368" x2="374.4652"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="30.8706" x="339.3657" y="380.595">CD Playing
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="43.9801" x="329.005"
+              y="570.8955"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="329.005" x2="372.9851"
+              y1="582.0161" y2="582.0161"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="35.5224" x="333.2338" y="578.5054">CD Stopped
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="21.1443"
+              x="263.0348" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="263.0348" x2="284.1791"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="4.2289" x="271.4925" y="380.595">H
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="21.1443"
+              x="298.9801" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="298.9801" x2="320.1244"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="4.2289" x="307.4378" y="380.595">H
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="21.1443"
+              x="227.0896" y="372.9851"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="227.0896" x2="248.2338"
+              y1="384.1056" y2="384.1056"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="4.2289" x="235.5473" y="380.595">H
+        </text>
+        <ellipse cx="474.9005" cy="482.5124" fill="#808080" filter="url(#f18rcl2tja00kn)"
+                 rx="4.2289" ry="4.2289" style="stroke: none; stroke-width: 0.4228855721393035;"/>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="111.7673" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="123.0597"
+              x="220.9577" y="426.6915"/>
+        <rect fill="#FFFFFF" height="98.1095" rx="5.2861" ry="5.2861"
+              style="stroke: #FFFFFF; stroke-width: 0.4228855721393035;" width="120.5224"
+              x="222.2264" y="439.0808"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="220.9577" x2="344.0174"
+              y1="437.8121" y2="437.8121"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="32.5622" x="266.2065" y="434.3014">CD Paused
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="103.607"
+              x="225.6095" y="467.4141"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="225.6095" x2="329.2164"
+              y1="478.5347" y2="478.5347"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="95.1493" x="229.8383" y="475.024">Time And Track (fields not blank)
+        </text>
+        <rect fill="#808000" filter="url(#f18rcl2tja00kn)" height="21.1443" rx="5.2861" ry="5.2861"
+              style="stroke: #808080; stroke-width: 0.6343283582089553;" width="92.1891"
+              x="231.3184" y="510.9713"/>
+        <line style="stroke: #808080; stroke-width: 0.6343283582089553;" x1="231.3184" x2="323.5075"
+              y1="522.0919" y2="522.0919"/>
+        <text fill="#FFFFFF" font-family="Impact" font-size="5.9204" lengthAdjust="spacingAndGlyphs"
+              textLength="83.7313" x="235.5473" y="518.5812">Time And Track (fields blank)
+        </text>
+        <ellipse cx="277.4129" cy="447.5385" fill="#808080" filter="url(#f18rcl2tja00kn)"
+                 rx="4.2289" ry="4.2289"
+                 style="stroke: none; stroke-width: 0.4228855721393035;"/><!--link *start*CD_Paused to Time_And_Track_Fields_Not_Blank-->
+        <path d="M277.4129,451.8312 C277.4129,455.2291 277.4129,460.3629 277.4129,465.1534 "
+              fill="none" id="*start*CD_Paused-Time_And_Track_Fields_Not_Blank"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="277.4129,467.3228,279.1045,463.5168,277.4129,465.2083,275.7214,463.5168,277.4129,467.3228"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/><!--link Time_And_Track_Fields_Not_Blank to Time_And_Track_Fields_Blank-->
+        <path d="M260.1063,488.5808 C257.7025,490.7686 255.5733,493.3012 254.1542,496.1703 C251.7881,500.9543 253.9707,505.4621 257.7924,509.2954 "
+              fill="none" id="Time_And_Track_Fields_Not_Blank-Time_And_Track_Fields_Blank"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="259.5222,510.8958,257.8773,507.0694,257.9702,509.4598,255.5798,509.5527,259.5222,510.8958"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="36.791" x="254.5771" y="501.6961">Timer
+            Expired
+        </text><!--link Time_And_Track_Fields_Blank to Time_And_Track_Fields_Not_Blank-->
+        <path d="M287.9897,510.9695 C291.273,506.593 293.6099,501.3072 291.791,496.1703 C291.0759,494.1508 290.023,492.193 288.8063,490.3608 "
+              fill="none" id="Time_And_Track_Fields_Blank-Time_And_Track_Fields_Not_Blank"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="287.5415,488.5728,288.3588,492.6567,288.7627,490.2989,291.1205,490.7028,287.5415,488.5728"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="36.791" x="292.6368" y="501.6961">Timer
+            Expired
+        </text>
+        <ellipse cx="16.0697" cy="7.7303" fill="#808080" filter="url(#f18rcl2tja00kn)" rx="4.2289"
+                 ry="4.2289"
+                 style="stroke: none; stroke-width: 0.4228855721393035;"/><!--link *start to No_CD_Loaded-->
+        <path d="M16.0697,12.1537 C16.0697,15.8297 16.0697,21.731 16.0697,28.5399 C16.0697,30.2421 16.0697,32.001 16.0697,33.7961 C16.0697,34.2449 16.0697,34.6959 16.0697,35.1488 "
+              fill="none" id="*start-No_CD_Loaded"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="16.0697,35.1488,17.7612,31.3429,16.0697,33.0344,14.3781,31.3429,16.0697,35.1488"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/><!--link *start*No_CD_Loaded to CD_Drawer_Closed-->
+        <path d="M57.5124,83.4311 C57.5124,88.7975 57.5124,98.8241 57.5124,106.9266 " fill="none"
+              id="*start*No_CD_Loaded-CD_Drawer_Closed"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="57.5124,109.1552,59.204,105.3493,57.5124,107.0408,55.8209,105.3493,57.5124,109.1552"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/><!--link CD_Drawer_Closed to CD_Drawer_Open-->
+        <path d="M72.2707,130.4095 C85.2419,139.3662 104.0975,152.391 117.5618,161.6903 "
+              fill="none" id="CD_Drawer_Closed-CD_Drawer_Open"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="119.3421,162.9167,117.1717,159.362,117.6023,161.7151,115.2492,162.1457,119.3421,162.9167"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="13.1095" x="101.0697" y="148.5795">Eject
+        </text><!--link CD_Drawer_Open to Closing_CD_Drawer-->
+        <path d="M122.2321,184.1159 C111.9251,193.0007 96.9816,205.8861 86.2137,215.1667 "
+              fill="none" id="CD_Drawer_Open-Closing_CD_Drawer"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="84.523,216.6244,88.51,215.4201,86.1243,215.2436,86.3008,212.8579,84.523,216.6244"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="13.1095" x="107.8358" y="202.286">Eject
+        </text><!--link Closing_CD_Drawer to CD_Drawer_Closed-->
+        <path d="M64.8246,216.5859 C58.9515,208.332 51.4263,196.1343 48.209,184.0736 C43.5092,166.452 48.5485,145.4219 52.8412,132.4393 "
+              fill="none" id="Closing_CD_Drawer-CD_Drawer_Closed"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="53.5225,130.4306,50.7017,133.4949,52.8457,132.4338,53.9068,134.5778,53.5225,130.4306"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="48.6318" x="48.6318" y="175.4328">[No CD
+            In Drawer]
+        </text><!--link *start*CD_Loaded_Group to CD_Stopped-->
+        <path d="M474.9216,486.8457 C474.7609,496.7544 472.9933,523.1369 459.2537,538.3333 C458.501,539.1639 406.8316,559.3436 375.1553,571.6639 "
+              fill="none" id="*start*CD_Loaded_Group-CD_Stopped"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="373.0988,572.464,377.2591,572.6606,375.0694,571.6974,376.0326,569.5077,373.0988,572.464"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/><!--link CD_Playing to CD_Paused-->
+        <path d="M335.007,391.3654 C332.4227,392.3071 329.8076,393.2485 327.3134,394.1294 C310.6682,400.0062 300.6446,392.9846 289.6766,406.8159 C285.5729,411.9912 282.8043,418.0397 281.0049,424.4181 "
+              fill="none" id="CD_Playing-CD_Paused"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="280.4311,426.5934,283.0366,423.3441,280.9699,424.5488,279.7652,422.4821,280.4311,426.5934"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="16.4925" x="290.0995" y="412.3417">Pause
+        </text><!--link CD_Paused to CD_Playing-->
+        <path d="M317.0276,426.6844 C321.8375,419.8395 326.8796,413.0611 331.9652,406.8159 C335.0078,403.0797 338.5808,399.2788 341.9859,395.8771 "
+              fill="none" id="CD_Paused-CD_Playing"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="343.6406,394.2414,339.7449,395.7145,342.1371,395.7281,342.1235,398.1202,343.6406,394.2414"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="37.2139" x="332.3881" y="412.3417">Pause
+            Or Play
+        </text><!--link CD_Playing to CD_Playing-->
+        <path d="M374.6348,378.6712 C382.5892,378.395 389.2662,380.024 389.2662,383.5572 C389.2662,386.7593 383.7826,388.3971 376.8338,388.4707 "
+              fill="none" id="CD_Playing-CD_Playing"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="374.6348,388.4432,378.4192,390.1825,376.749,388.4698,378.4617,386.7997,374.6348,388.4432"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="91.7662" x="391.8035" y="385.4885">[Timer
+            expired and not end of CD]
+        </text><!--link CD_Playing to CD_Stopped-->
+        <path d="M364.5354,394.2055 C367.4246,397.8922 370.2164,402.2712 371.7164,406.8159 C372.7178,409.8501 371.9135,410.816 371.7164,414.005 C368.1316,472.0198 357.6081,540.7243 353.0921,568.483 "
+              fill="none" id="CD_Playing-CD_Stopped"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="352.7259,570.7259,355.0087,567.2423,353.0666,568.6392,351.6698,566.6971,352.7259,570.7259"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="81.194" x="371.2935" y="484.4437">[Timer
+            expired and end of CD]
+        </text><!--link CD_Playing to CD_Stopped-->
+        <path d="M335.0188,391.9777 C332.4566,392.8074 329.8436,393.5555 327.3134,394.1294 C267.6718,407.6553 247.6291,385.5257 190.2985,406.8159 C176.0227,412.1172 169.3661,413.1558 162.3881,426.6915 C139.652,470.7943 139.652,494.2306 162.3881,538.3333 C169.3661,551.8691 176.1564,552.5605 190.2985,558.209 C236.1072,576.5047 294.4045,580.457 326.6935,581.1268 "
+              fill="none" id="CD_Playing-CD_Stopped"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="328.9728,581.1695,325.1994,579.4065,326.8588,581.1297,325.1356,582.789,328.9728,581.1695"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="12.6866" x="162.8109" y="484.4437">Stop
+        </text><!--link CD_Stopped to CD_Playing-->
+        <path d="M328.9728,578.0017 C291.3056,572.2961 217.0731,558.6999 201.7164,538.3333 C171.8438,498.7149 171.3507,465.9336 201.7164,426.6915 C237.0071,381.0846 272.2859,411.3742 327.3134,394.1294 C329.1674,393.5483 331.0797,392.9148 332.9915,392.2577 "
+              fill="none" id="CD_Stopped-CD_Playing"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="335.0637,391.5362,330.9131,391.1901,333.0668,392.2314,332.0255,394.3851,335.0637,391.5362"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="10.995" x="202.1393" y="484.4437">Play
+        </text><!--link CD_Paused to CD_Stopped-->
+        <path d="M321.2454,538.4407 C329.3517,550.0494 337.1155,561.1679 342.6781,569.1338 "
+              fill="none" id="CD_Paused-CD_Stopped"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="343.9015,570.8862,343.1098,566.7972,342.6911,569.1525,340.3359,568.7339,343.9015,570.8862"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="12.6866" x="334.9254" y="556.5457">Stop
+        </text><!--link CD_Loaded_Group to H3-->
+        <path d="M428.7764,340.4233 C426.3067,340.4487 268.1877,342.1115 252.0398,353.1095 C246.0746,357.1725 242.5075,364.4166 240.4185,370.7713 "
+              fill="none" id="CD_Loaded_Group-H3"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="239.7655,372.8861,242.5051,369.749,240.3896,370.8659,239.2727,368.7504,239.7655,372.8861"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="85.4229" x="252.4627" y="358.6353">
+            [previous track and track &gt;= 1]
+        </text><!--link CD_Loaded_Group to H3-->
+        <path d="M428.7764,340.4254 C427.5246,340.5269 387.2499,343.8516 356.4925,353.1095 C348.8358,355.4142 347.7659,358.3943 340,360.2985 C321.7013,364.7857 272.661,358.6146 255.4229,366.2189 C252.5739,367.4757 249.9034,369.3948 247.5416,371.4948 "
+              fill="none" id="CD_Loaded_Group-H3"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="245.9579,372.972,249.8951,371.6136,247.5043,371.53,247.5879,369.1393,245.9579,372.972"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="80.7711" x="356.9154" y="358.6353">[next
+            track and track &lt;&gt; last]
+        </text><!--link CD_stepping_forwards to H1-->
+        <path d="M516.4786,372.9466 C505.6612,367.4825 491.6256,361.395 478.2836,358.607 C457.9386,354.3553 310.423,357.9147 291.3682,366.2189 C288.5437,367.4499 285.9112,369.3457 283.5845,371.439 "
+              fill="none" id="CD_stepping_forwards-H1"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="282.0237,372.914,285.9517,371.5294,283.5605,371.4618,283.6281,369.0705,282.0237,372.914"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="29.602" x="448.2587" y="358.6353">Forward
+            up
+        </text><!--link CD_stepping_forwards to CD_Stopped-->
+        <path d="M535.2294,394.2609 C534.2821,421.6736 527.8754,497.217 486.7413,538.3333 C456.5811,568.4817 405.3802,577.3923 375.223,579.9981 "
+              fill="none" id="CD_stepping_forwards-CD_Stopped"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="373.0887,580.1753,377.0213,581.5468,375.1959,580.0007,376.742,578.1753,373.0887,580.1753"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="81.194" x="532.4129" y="484.4437">[Timer
+            expired and end of CD]
+        </text><!--link CD_Loaded_Group to CD_stepping_forwards-->
+        <path d="M489.3433,345.208 C489.6429,345.2533 489.9416,345.299 490.2393,345.3451 C492.6211,345.714 494.9412,346.1096 497.1697,346.5337 C506.0838,348.2301 513.5332,350.383 517.6119,353.1095 C523.9002,357.3129 528.2813,364.5603 531.1147,370.8816 "
+              fill="none" id="CD_Loaded_Group-CD_stepping_forwards"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="532.0197,372.9838,532.0683,368.8192,531.1835,371.0417,528.961,370.157,532.0197,372.9838"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="36.791" x="525.2239" y="358.6353">Forward
+            down
+        </text><!--link CD_stepping_forwards to CD_stepping_forwards-->
+        <path d="M571.1408,378.7329 C579.6323,379.1199 585.908,380.7281 585.908,383.5572 C585.908,386.1432 580.6642,387.7091 573.2806,388.2546 "
+              fill="none" id="CD_stepping_forwards-CD_stepping_forwards"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="571.1408,388.3815,575.0414,389.8416,573.2514,388.2546,574.8384,386.4646,571.1408,388.3815"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="91.7662" x="588.4453" y="385.4885">[Timer
+            expired and not end of CD]
+        </text><!--link CD_stepping_backwards to H2-->
+        <path d="M705.3943,372.9589 C698.2983,370.2845 690.4326,367.7421 682.9602,366.2189 C644.2873,358.3363 364.0114,350.6648 327.7363,366.2189 C324.87,367.4478 322.1859,369.3432 319.8068,371.436 "
+              fill="none" id="CD_stepping_backwards-H2"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="318.2096,372.9111,322.1536,371.5726,319.7633,371.4769,319.859,369.0867,318.2096,372.9111"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="30.0249" x="484.8383" y="358.6353">Reverse
+            up
+        </text><!--link CD_Loaded_Group to CD_stepping_backwards-->
+        <path d="M489.2866,342.1824 C492.021,342.3164 494.8236,342.4607 497.6892,342.616 C503.4205,342.9265 509.4037,343.281 515.5969,343.6856 C565.1422,346.9228 628.1204,353.3719 682.9602,366.2189 C689.498,367.751 696.3826,369.9242 702.7893,372.2049 "
+              fill="none" id="CD_Loaded_Group-CD_stepping_backwards"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="704.9418,372.9813,701.9295,370.105,702.9513,372.268,700.7883,373.2898,704.9418,372.9813"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="37.2139" x="649.1294" y="358.6353">Reverse
+            down
+        </text><!--link CD_stepping_backwards to CD_stepping_backwards-->
+        <path d="M768.4592,378.7799 C776.9888,379.2379 783.1841,380.8304 783.1841,383.5572 C783.1841,386.0497 778.008,387.5945 770.6032,388.1912 "
+              fill="none" id="CD_stepping_backwards-CD_stepping_backwards"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="768.4592,388.3346,772.3681,389.7723,770.5691,388.1956,772.1458,386.3965,768.4592,388.3346"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="41.0199" x="785.7214" y="385.4885">[Timer
+            expired]
+        </text><!--link Closing_CD_Drawer to CD_Loaded-->
+        <path d="M75.6026,237.8909 C77.7543,245.4787 80.8185,256.0504 83.7313,265.2677 C88.924,281.6995 95.1517,300.0231 100.1377,314.3958 C101.3842,317.9889 102.553,321.3351 103.6087,324.3431 C104.1366,325.8471 104.6361,327.2665 105.103,328.59 C105.2197,328.9209 105.3343,329.2457 105.4469,329.5644 C105.5031,329.7238 105.5589,329.8816 105.6141,330.0378 C105.6417,330.1159 105.6691,330.1936 105.6965,330.271 "
+              fill="none" id="Closing_CD_Drawer-CD_Loaded"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="105.6965,330.271,106.023,326.1189,104.9919,328.2774,102.8333,327.2462,105.6965,330.271"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="38.4826" x="84.1542" y="263.6044">[CD in
+            drawer]
+        </text><!--link CD_Loaded to CD_Drawer_Open-->
+        <path d="M120.219,275.3835 C120.2588,275.2629 120.2986,275.1425 120.3387,275.0222 C120.4187,274.7815 120.4993,274.5413 120.5804,274.3016 C121.2294,272.3837 121.9143,270.496 122.6368,268.6507 C123.2834,266.9998 124.1765,266.9452 124.7512,265.2677 C134.0154,238.225 134.8658,204.2453 134.544,186.3192 "
+              fill="none" id="CD_Loaded-CD_Drawer_Open"
+              style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <polygon fill="#000000"
+                 points="134.4971,184.1075,132.893,187.9511,134.5454,186.2213,136.2752,187.8738,134.4971,184.1075"
+                 style="stroke: #000000; stroke-width: 0.4228855721393035;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="5.4975"
+              lengthAdjust="spacingAndGlyphs" textLength="13.1095" x="134.4776" y="229.1392">Eject
+        </text><!--
+@startuml
+skinparam backgroundColor White
+skinparam state {
+  FontColor White
+  ArrowColor Black
+  StartColor Gray
+  EndColor Red
+  BackgroundColor Blue
+  BackgroundColor<<NoContent>> Olive
+  BorderColor Gray
+  FontName Impact
+}
+
+scale 850 width
+[*] - -> No_CD_Loaded
+
+state "No CD Loaded" as No_CD_Loaded <<NoContent>> {
+  state "CD Drawer Closed" as CD_Drawer_Closed <<NoContent>>
+  state "CD Drawer Open" as CD_Drawer_Open <<NoContent>>
+  state "Closing CD Drawer" as Closing_CD_Drawer <<NoContent>>
+  [*] - -> CD_Drawer_Closed
+  CD_Drawer_Closed- -> CD_Drawer_Open: Eject
+  CD_Drawer_Open - -> Closing_CD_Drawer: Eject
+  Closing_CD_Drawer - -> CD_Drawer_Closed: [No CD In Drawer]
+}
+
+state "CD Loaded" as CD_Loaded <<NoContent>> {
+  state "CD Loaded Group" as CD_Loaded_Group <<NoContent>> {
+    state "CD Playing" as CD_Playing <<NoContent>>
+    state "CD Stopped" as CD_Stopped <<NoContent>>
+    state "CD Paused" as CD_Paused <<NoContent>> {
+      state "Time And Track (fields not blank)" as Time_And_Track_Fields_Not_Blank <<NoContent>>
+      state "Time And Track (fields blank)" as Time_And_Track_Fields_Blank <<NoContent>>
+      [*] - -> Time_And_Track_Fields_Not_Blank
+      Time_And_Track_Fields_Not_Blank - -> Time_And_Track_Fields_Blank: Timer Expired
+      Time_And_Track_Fields_Blank - -> Time_And_Track_Fields_Not_Blank: Timer Expired
+    }
+    state "H" as H1 <<NoContent>>
+    state "H" as H2 <<NoContent>>
+    state "H" as H3 <<NoContent>>
+    [*] - -> CD_Stopped
+    CD_Playing - -> CD_Paused : Pause
+    CD_Paused - -> CD_Playing : Pause Or Play
+    CD_Playing - -> CD_Playing : [Timer expired and not end of CD]
+    CD_Playing - -> CD_Stopped : [Timer expired and end of CD]
+    CD_Playing - -> CD_Stopped : Stop
+    CD_Stopped - -> CD_Playing : Play
+    CD_Paused - -> CD_Stopped : Stop
+  }
+  state "CD stepping forwards" as CD_stepping_forwards <<NoContent>>
+  state "CD stepping backwards" as CD_stepping_backwards <<NoContent>>
+  CD_Loaded_Group - -> H3: [previous track and track >= 1]
+  CD_Loaded_Group - -> H3: [next track and track <> last]
+  CD_stepping_forwards - -> H1: Forward up
+  CD_stepping_forwards - -> CD_Stopped : [Timer expired and end of CD]
+  CD_Loaded_Group - -> CD_stepping_forwards : Forward down
+  CD_stepping_forwards - -> CD_stepping_forwards : [Timer expired and not end of CD]
+  CD_stepping_backwards - -> H2: Reverse up
+  CD_Loaded_Group - -> CD_stepping_backwards : Reverse down
+  CD_stepping_backwards - -> CD_stepping_backwards : [Timer expired]
+}
+
+Closing_CD_Drawer - -> CD_Loaded: [CD in drawer]
+CD_Loaded - -> CD_Drawer_Open: Eject
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 12:31:00 UTC 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>
