@@ -1,9 +1,15 @@
 # State transducer visualization tool
 
 ## Examples
+Dagre does some nice visualizations. However they often have to be manually adjusted...
+
 ![cd-player-dagre](./assets/cd-player-dagre-visually-adjusted.png)
 
+PlantUML not so good for visualizing complex state machines. But could be customizable? The SVG 
+generated can be customized in any case.
+
 ![plantuml](./assets/bLRRQjj0.svg)
+
 ## Quick start
 
 
