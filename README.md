@@ -3,6 +3,7 @@
 ## Examples
 ![cd-player-dagre](./assets/cd-player-dagre-visually-adjusted.png)
 
+![plantuml](./assets/bLRRQjj0.svg)
 ## Quick start
 
 
@@ -10,12 +11,6 @@
 
 
 ## Documentation
-
-Take a look at the [documentation table of contents](dist/doc/TOC.md).
-This documentation is bundled with the project which makes it 
-available for offline reading and provides a useful starting point for
-any documentation you want to write about your project.
-
 
 ## Contributing
 
