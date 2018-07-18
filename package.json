@@ -20,27 +20,24 @@
       "test": "test"
     }
   },
-  "homepage": "https://html5boilerplate.com/",
+  "homepage": "https://github.com/brucou/state-transducer-visualizer/",
   "license": "MIT",
-  "name": "html5-boilerplate",
+  "name": "State transducer visualizer",
   "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000",
     "parcel": "parcel src/index.html"
   },
-  "version": "6.1.0",
-  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "version": "0.1.0",
+  "description": "Online tool to interactively visualize state machines",
   "files": [
     "CHANGELOG.md",
     "LICENSE.txt",
     "package.json",
     "dist/",
-    "modernizr-config.json",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/h5bp/html5-boilerplate.git"
+    "url": "https://github.com/brucou/state-transducer-visualizer.git"
   },
   "dependencies": {
     "cytoscape-dagre": "^2.2.1",
