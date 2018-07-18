@@ -1,5 +1,3 @@
-// TODO : add {states, transitions} format to specs for automata library
-// TODO : 1. conversion format to plant text (have a look how it ends up looking like with the cd player)
 // TODO : conversion format to gml -> yed : NO, ugly
 // gml :
 // Creator	"yFiles"
@@ -29,10 +27,12 @@
 import { arrayTreeLenses, breadthFirstTraverseTree } from "fp-rosetree"
 import dagre from 'cytoscape-dagre';
 
-const INIT = "INIT";
+const INIT = "init";
 const HISTORY = 'history';
 const TO_SELF = 'to_self';
 const STANDARD = 'standard';
+const INITIAL_STATE_NAME = 'nok';
+
 const style = `
         node[label = '${INIT}'] {
           background-color: black;
@@ -115,13 +115,13 @@ window.onload = function () {
   const textAreaSel = document.querySelector('textarea');
   graphSpecs = `
   {
-    states: ['root', [
-      ['no_cd_loaded', [
+    "states": ["${INITIAL_STATE_NAME}", [
+      ["no_cd_loaded", [
         "cd_drawer_closed",
         "cd_drawer_open",
         "closing_cd_drawer"
       ]],
-      ['cd_loaded', [
+      ["cd_loaded", [
         ["cd_loaded_group", [
           ["cd_paused_group", [
             "time_and_track_fields_not_blank",
@@ -134,62 +134,62 @@ window.onload = function () {
         "stepping_backwards"
       ]]
     ]],
-    transitions: [
-      { from: "NOK", to: "no_cd_loaded", event: "INIT", action: "fsm_initialize_model" },
-      { from: "no_cd_loaded", to: "cd_drawer_closed", event: "INIT", action: "identity" },
-      { from: "cd_drawer_closed", to: "cd_drawer_open", event: "EJECT", action: "open_drawer" },
-      { from: "cd_drawer_open", to: "closing_cd_drawer", event: "EJECT", action: "close_drawer" },
+    "transitions": [
+      { "from": "${INITIAL_STATE_NAME}", "to": "no_cd_loaded", "event": "${INIT}", "action": "fsm_initialize_model" },
+      { "from": "no_cd_loaded", "to": "cd_drawer_closed", "event": "${INIT}", "action": "identity" },
+      { "from": "cd_drawer_closed", "to": "cd_drawer_open", "event": "EJECT", "action": "open_drawer" },
+      { "from": "cd_drawer_open", "to": "closing_cd_drawer", "event": "EJECT", "action": "close_drawer" },
       {
-        from: "closing_cd_drawer", guards: [
-          { predicate: "is_not_cd_in_drawer", to: "cd_drawer_closed", action: "identity" },
-          { predicate: "is_cd_in_drawer", to: "cd_loaded", action: "identity" }
+        "from": "closing_cd_drawer", "guards": [
+          { "predicate": "is_not_cd_in_drawer", "to": "cd_drawer_closed", "action": "identity" },
+          { "predicate": "is_cd_in_drawer", "to": "cd_loaded", "action": "identity" }
         ]
       },
-      { from: "cd_loaded", to: "cd_loaded_group", event: "INIT", action: "identity" },
-      { from: "cd_playing", to: "cd_paused_group", event: "PAUSE", action: "pause_playing_cd" },
-      { from: "cd_paused_group", to: "cd_playing", event: "PAUSE", action: "resume_paused_cd" },
-      { from: "cd_paused_group", to: "cd_playing", event: "PLAY", action: "resume_paused_cd" },
-      { from: "cd_paused_group", to: "time_and_track_fields_not_blank", event: "INIT", action: "identity" },
+      { "from": "cd_loaded", "to": "cd_loaded_group", "event": "${INIT}", "action": "identity" },
+      { "from": "cd_playing", "to": "cd_paused_group", "event": "PAUSE", "action": "pause_playing_cd" },
+      { "from": "cd_paused_group", "to": "cd_playing", "event": "PAUSE", "action": "resume_paused_cd" },
+      { "from": "cd_paused_group", "to": "cd_playing", "event": "PLAY", "action": "resume_paused_cd" },
+      { "from": "cd_paused_group", "to": "time_and_track_fields_not_blank", "event": "${INIT}", "action": "identity" },
       {
-        from: "time_and_track_fields_not_blank",
-        to: "time_and_track_fields_blank",
-        event: "TIMER_EXPIRED",
-        action: "create_pause_timer"
+        "from": "time_and_track_fields_not_blank",
+        "to": "time_and_track_fields_blank",
+        "event": "TIMER_EXPIRED",
+        "action": "create_pause_timer"
       },
       {
-        from: "time_and_track_fields_blank",
-        to: "time_and_track_fields_not_blank",
-        event: "TIMER_EXPIRED",
-        action: "create_pause_timer"
+        "from": "time_and_track_fields_blank",
+        "to": "time_and_track_fields_not_blank",
+        "event": "TIMER_EXPIRED",
+        "action": "create_pause_timer"
       },
-      { from: "cd_paused_group", to: "cd_stopped", event: "STOP", action: "stop" },
-      { from: "cd_stopped", to: "cd_playing", event: "PLAY", action: "play" },
-      { from: "cd_playing", to: "cd_stopped", event: "STOP", action: "stop" },
-      { from: "cd_loaded_group", to: "cd_stopped", event: "INIT", action: "stop" },
+      { "from": "cd_paused_group", "to": "cd_stopped", "event": "STOP", "action": "stop" },
+      { "from": "cd_stopped", "to": "cd_playing", "event": "PLAY", "action": "play" },
+      { "from": "cd_playing", "to": "cd_stopped", "event": "STOP", "action": "stop" },
+      { "from": "cd_loaded_group", "to": "cd_stopped", "event": "${INIT}", "action": "stop" },
       {
-        from: "cd_loaded_group", event: "NEXT_TRACK", guards: [
-          { predicate: "is_last_track", to: "cd_stopped", action: "stop" },
-          { predicate: "is_not_last_track", to: "history.cd_loaded_group", action: "go_next_track" }
+        "from": "cd_loaded_group", "event": "NEXT_TRACK", "guards": [
+          { "predicate": "is_last_track", "to": "cd_stopped", "action": "stop" },
+          { "predicate": "is_not_last_track", "to": "history.cd_loaded_group", "action": "go_next_track" }
         ]
       },
       {
-        from: "cd_loaded_group", event: "PREVIOUS_TRACK", guards: [
-          { predicate: "is_track_gt_1", to: "history.cd_loaded_group", action: "go_previous_track" },
-          { predicate: "is_track_eq_1", to: "history.cd_loaded_group", action: "go_track_1" }
+        "from": "cd_loaded_group", "event": "PREVIOUS_TRACK", "guards": [
+          { "predicate": "is_track_gt_1", "to": "history.cd_loaded_group", "action": "go_previous_track" },
+          { "predicate": "is_track_eq_1", "to": "history.cd_loaded_group", "action": "go_track_1" }
         ]
       },
-      { from: "cd_loaded", to: "cd_drawer_open", event: "EJECT", action: "eject" },
+      { "from": "cd_loaded", "to": "cd_drawer_open", "event": "EJECT", "action": "eject" },
       {
-        from: "stepping_forwards", event: "TIMER_EXPIRED", guards: [
-          { predicate: "is_not_end_of_cd", to: "stepping_forwards", action: "go_forward_1_s" },
-          { predicate: "is_end_of_cd", to: "cd_stopped", action: "stop" }
+        "from": "stepping_forwards", "event": "TIMER_EXPIRED", "guards": [
+          { "predicate": "is_not_end_of_cd", "to": "stepping_forwards", "action": "go_forward_1_s" },
+          { "predicate": "is_end_of_cd", "to": "cd_stopped", "action": "stop" }
         ]
       },
-      { from: "stepping_forwards", to: "history.cd_loaded_group", event: "FORWARD_UP", action: "stop_forward_timer" },
-      { from: "cd_loaded_group", to: "stepping_forwards", event: "FORWARD_DOWN", action: "go_forward_1_s" },
-      { from: "stepping_backwards", to: "stepping_backwards", event: "TIMER_EXPIRED", action: "go_backward_1_s" },
-      { from: "stepping_backwards", to: "history.cd_loaded_group", event: "REVERSE_UP", action: "stop_backward_timer" },
-      { from: "cd_loaded_group", to: "stepping_backwards", event: "REVERSE_DOWN", action: "go_backward_1_s" }
+      { "from": "stepping_forwards", "to": "history.cd_loaded_group", "event": "FORWARD_UP", "action": "stop_forward_timer" },
+      { "from": "cd_loaded_group", "to": "stepping_forwards", "event": "FORWARD_DOWN", "action": "go_forward_1_s" },
+      { "from": "stepping_backwards", "to": "stepping_backwards", "event": "TIMER_EXPIRED", "action": "go_backward_1_s" },
+      { "from": "stepping_backwards", "to": "history.cd_loaded_group", "event": "REVERSE_UP", "action": "stop_backward_timer" },
+      { "from": "cd_loaded_group", "to": "stepping_backwards", "event": "REVERSE_DOWN", "action": "go_backward_1_s" }
     ]
   }
 `;
@@ -230,7 +230,7 @@ function generateGraphHandler(ev) {
   }
 
   // Per our state transducer specs, all automata start in an initial NOK state, so we create that first
-  const firstNode = [{ data: { id: `NOK.${INIT}`, label: INIT, parent: undefined } }];
+  const firstNode = [{ data: { id: `${INITIAL_STATE_NAME}.${INIT}`, label: INIT, parent: undefined } }];
   // Then we add the rest of the nodes passed in the graph specification
   const nodes = firstNode.concat(breadthFirstTraverseTree(arrayTreeLenses, traverse, states));
   // We display it in the console for now in case we want to export it to another visualizer or format (yed...)
@@ -253,7 +253,7 @@ function generateGraphHandler(ev) {
       let edge;
 
       // Case init transition (event is INIT)
-      // { from: "cd_loaded", to: "cd_loaded_group", event: "INIT", action: "identity" },
+      // { from: "cd_loaded", to: "cd_loaded_group", event: "${INIT}", action: "identity" },
       if (event === INIT) {
         const initEvent = [from, event].join('.');
         nodes.push({ data: { id: `${initEvent}`, label: INIT, parent: from } });
