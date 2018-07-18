@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/brucou/state-transducer-visualizer/",
   "license": "MIT",
-  "name": "State transducer visualizer",
+  "name": "state-transducer-visualizer",
   "scripts": {
     "parcel": "parcel src/index.html"
   },
