@@ -132,7 +132,7 @@ format, please refer to the corresponding [github directory](https://github.com/
 
 ## Contributing
 
-Anyone is welcome to [contribute](.github/CONTRIBUTING.md),
+Anyone is welcome to contribute,
 however, if you decide to get involved, please take a moment to review
 the [guidelines](.github/CONTRIBUTING.md):
 
