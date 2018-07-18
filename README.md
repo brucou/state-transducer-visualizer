@@ -94,6 +94,12 @@ The initial window starts with the example specification for a CD player :
   }
 ```
 
+You can modify directly the specifications manually, and click the generate graph buttons when 
+you are done. At this point of time, there is nothing done in term of error management. This 
+means that if your modification of the graph is incorrect, the display will not be updated, with 
+no visible error message displayed (there might be some indications on what went wrong in the 
+console though). 
+
 # Adjusting
 Dagre does some nice visualizations. However they often have to be manually adjusted. We use 
 cytoscape as a graph visualization library as it allows to adjust the graph manually. 
