@@ -14,7 +14,6 @@ We thus end like with a JSON-like format.
 The initial window starts with the example specification for a CD player : 
 
 ```JSON
-
   {
     "states": ["nok", [
       ["no_cd_loaded", [
@@ -104,23 +103,32 @@ player specification :
 
 ![cd-player-dagre](./assets/cd-player-automatic-dagre-visualization.png)
 
-Here is the result of a manual adjustment :
+Here is the result of a manual adjustment, to have less edge-crossing and more readable labels :
 
 ![cd-player-dagre-adjusted](./assets/cd-player-dagre-visually-adjusted.png)
 
-For information, PlantUML not so good for visualizing complex state machines. But could be 
-customizable? The SVG 
-generated can be customized in any case.
+For information, PlantUML not so good for visualizing complex state machines. However it is 
+still useful as the generated SVG can be customized at will.
 
 ![plantuml](./assets/bLRRQjj0.svg)
 
+In conclusion, such an automatic visualization is useful. Even though it has to be improved 
+manually, a good part of the layout is already done. It will be interesting in a future version 
+to investigate how other engines display complx compound graphs.
+
 ## Quick start
-`npm run parcel`
+- `npm run parcel`
+- then open a web browser at the indicated address (should be displayed as a link in your 
+terminal after running parcel)
 
-## Features
-
+## Visualization parameters
+Compound state entry transitions are represented by 2-segments line. History states have `H` as 
+state name. Self-loop are forced to Bezier curves. Other parameters could be used. To modify 
+them, see the code.
 
 ## Documentation
+That `README.md` essentially. For details about the state transducer library, its motivation and 
+format, please refer to the corresponding [github directory](https://github.com/brucou/state-transducer).
 
 ## Contributing
 
