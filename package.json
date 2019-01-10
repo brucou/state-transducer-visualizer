@@ -1,7 +1,16 @@
 {
   "devDependencies": {
-    "fp-rosetree": "^0.4.0",
-    "parcel-bundler": "^1.9.5"
+    "@babel/core": "^7.1.0",
+    "@svgr/webpack": "2.4.1",
+    "babel-core": "7.0.0-beta.3",
+    "babel-loader": "8.0.5",
+    "babel-plugin-named-asset-import": "^0.2.3",
+    "babel-preset-react-app": "^6.1.0",
+    "html-webpack-plugin": "4.0.0-alpha.2",
+    "webpack": "4.19.1",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "3.1.9",
+    "webpack-manifest-plugin": "2.0.4"
   },
   "engines": {
     "node": ">=6",
@@ -9,7 +18,7 @@
   },
   "babel": {
     "presets": [
-      "env"
+      "@babel/env"
     ]
   },
   "h5bp-configs": {
@@ -40,9 +49,13 @@
     "url": "https://github.com/brucou/state-transducer-visualizer.git"
   },
   "dependencies": {
-    "cytoscape-dagre": "^2.2.1",
-    "cytoscape-klay": "^3.1.1",
+    "@babel/preset-env": "^7.2.3",
+    "cytoscape": "^3.3.1",
     "cytoscape-cola": "^2.2.3",
-    "cytoscape-euler": "^1.2.1"
+    "cytoscape-dagre": "^2.2.1",
+    "cytoscape-euler": "^1.2.1",
+    "cytoscape-klay": "^3.1.2",
+    "elkjs": "^0.4.1",
+    "fp-rosetree": "^0.6.2"
   }
 }
